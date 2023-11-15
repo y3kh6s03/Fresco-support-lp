@@ -1,0 +1,24 @@
+.hero {
+    &__logo {
+        width: 200px;
+        aspect-ratio: 5.5 / 1;
+        position: fixed;
+        top: 0;
+        left: 5%;
+        z-index: 999;
+
+        &__img {}
+    }
+
+    &__image {
+        &__img {}
+    }
+
+    &__title {
+        &__h1 {
+            &__span {}
+
+        }
+    }
+
+}

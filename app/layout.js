@@ -1,4 +1,4 @@
-import './globals.css'
+
 
 export const metadata = {
   title: 'フレスコ Support service',
@@ -8,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ja">
-      <body className={inter.className}>
+      <body>
         <main>
           {children}
         </main>
