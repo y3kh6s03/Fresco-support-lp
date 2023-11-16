@@ -28,7 +28,7 @@ export const Service = () => {
                 )
             })}
             <div className={styles.service__svg}>
-                <Image src={"/svgs/arrow.svg"} fill sizes="100%"/>
+                <Image src={"/svgs/arrow.svg"} fill sizes="100%" alt="bottom-arrow"/>
             </div>
         </section>
     )

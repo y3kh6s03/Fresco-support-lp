@@ -1,6 +1,7 @@
 "use client"
 
 import { Hero } from '@/app/components/hero/Hero'
+import { Merit } from '@/app/components/merit/Merit';
 import { Message } from '@/app/components/message/Message';
 import { Service } from '@/app/components/service/Service';
 import { Noto_Nastaliq_Urdu, Noto_Sans } from 'next/font/google';
@@ -27,6 +28,7 @@ export default function Home() {
       <Hero />
       <Message />
       <Service />
+      <Merit />
     </FontsContext.Provider>
   )
 }

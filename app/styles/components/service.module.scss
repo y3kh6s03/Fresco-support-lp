@@ -1,11 +1,13 @@
 @use "app/styles/common.scss" as *;
 
 .service__container {
-    @extend .section;
+    padding: 0 8%;
+    position: relative;
     background-color: $cBlue;
     color: white;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
+    @extend .mb-lg;
 
     @include mq(sm) {
         padding-top: 70px;
@@ -14,7 +16,7 @@
 
 .service {
     width: 100%;
-    @extend .mb-lg;
+    @extend .mb-md;
 
     @include mq(md) {
         display: flex;
