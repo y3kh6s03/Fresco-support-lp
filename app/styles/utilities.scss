@@ -1,0 +1,19 @@
+@use "app/styles/mq.scss" as *;
+
+
+//////////////////////////////
+/// margin bottom
+//////////////////////////////
+
+.mb-sm{
+    margin-bottom: 30px;
+}
+.mb-md{
+    margin-bottom: 50px;
+}
+.mb-lg{
+    margin-bottom: 100px;
+}
+.mb-xl{
+    margin-bottom: 200px;
+}
