@@ -1,0 +1,108 @@
+@use "app/styles/common.scss" as *;
+
+.service__container {
+    @extend .section;
+    background-color: $cBlue;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @include mq(sm) {
+        padding-top: 70px;
+    }
+}
+
+.service {
+    width: 100%;
+    @extend .mb-lg;
+
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin-right: calc(50% - 50vw)
+    }
+
+    @include mq(lg) {
+        width: 90%;
+    }
+
+    &__inner {
+        @extend .mb-sm;
+
+        @include mq(md) {
+            flex: 1;
+            max-width: 400px;
+        }
+
+        &__span {
+            display: block;
+        }
+
+        &__h3 {
+            @extend .font-lg;
+            @extend .mb-sm;
+        }
+
+        &__p {
+            max-width: 500px;
+        }
+    }
+
+    &__image {
+        position: relative;
+        width: 70vw;
+        aspect-ratio: 3 / 2;
+        margin-left: calc(50% - 20vw);
+
+        @include mq(sm) {
+            width: 50vw;
+            margin-left: calc(50% - 0vw);
+
+        }
+
+        @include mq(md) {
+            flex: 1;
+            margin-left: auto;
+        }
+
+        @include mq(lg) {
+            max-width: 450px;
+        }
+
+        & img {
+            object-fit: cover;
+        }
+    }
+
+    &__svg {
+        width: 100vw;
+        max-width: 1920px;
+        aspect-ratio: 9.6 / 1;
+        position: absolute;
+        left: 0;
+        bottom: calc(-100vw / 9.6 + 1px);
+
+        @include mq(max) {
+            bottom: -199px;
+        }
+    }
+
+    &:nth-child(odd) {
+        &.service {
+
+            @include mq(lg) {
+                max-width: 900px;
+            }
+        }
+    }
+
+    &:nth-child(even) {
+        &.service {
+            @include mq(lg) {
+                flex-direction: row-reverse;
+                margin-left: calc(50% - 33vw);
+            }
+        }
+    }
+}

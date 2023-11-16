@@ -2,6 +2,7 @@
 
 import { Hero } from '@/app/components/hero/Hero'
 import { Message } from '@/app/components/message/Message';
+import { Service } from '@/app/components/service/Service';
 import { Noto_Nastaliq_Urdu, Noto_Sans } from 'next/font/google';
 import { createContext } from 'react';
 
@@ -25,6 +26,7 @@ export default function Home() {
     <FontsContext.Provider value={Fonts}>
       <Hero />
       <Message />
+      <Service />
     </FontsContext.Provider>
   )
 }
