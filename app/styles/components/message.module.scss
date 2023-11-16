@@ -1,0 +1,53 @@
+@use "app/styles/common.scss" as *;
+
+.message {
+    @extend .section;
+
+    &__main {
+        @extend .mb-md;
+
+        &__h2 {
+            @extend .font-xl;
+            color: $cOrange;
+            @extend .mb-sm;
+        }
+
+        &__p {
+            max-width: 500px;
+
+            @include mq(lg){
+                max-width: 850px;
+            }
+        }
+    }
+
+    &__container {
+        @include mq(lg) {
+            display: flex;
+            justify-content: space-between;
+            align-items: top;
+            gap: 20px
+        }
+        @include mq(xl){
+            gap: 50px
+        }
+
+        &__inner {
+            @extend .mb-md;
+            max-width: 320px;
+
+            &__h3 {
+                @extend .font-lg;
+                @extend .mb-sm;
+            }
+
+            &__p {
+                max-width: 500px;
+            }
+        }
+
+
+    }
+
+
+}
