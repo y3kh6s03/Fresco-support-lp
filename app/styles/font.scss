@@ -2,13 +2,22 @@
 
 .font-md {
     font-size: 14px;
+    line-height: 1.6;
 
     @include mq(lg) {
         font-size: 16px;
     }
 }
-
 .font-lg {
+    font-size: 18px;
+    line-height: 1.6;
+
+    @include mq(lg) {
+        font-size: 24px;
+    }
+}
+
+.font-xl {
     font-size: 24px;
 
     @include mq(md) {
@@ -24,7 +33,7 @@
     }
 }
 
-.font-xl {
+.font-xxl {
     font-size: 72px;
     line-height: 1.0;
 

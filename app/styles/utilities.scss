@@ -2,18 +2,42 @@
 
 
 //////////////////////////////
+/// color
+//////////////////////////////
+$cBlack: #333333;
+$cGreen: #839C96;
+$cOrange: #E1B58B;
+$cBcc: #F4F2E0;
+$cBlue: #AACBD0;
+
+//////////////////////////////
 /// margin bottom
 //////////////////////////////
 
 .mb-sm{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .mb-md{
     margin-bottom: 50px;
+
+    @include mq(lg){
+        margin-bottom: 65px;
+    }
+    @include mq(xl){
+        margin-bottom: 70px;
+    }
 }
 .mb-lg{
     margin-bottom: 100px;
 }
 .mb-xl{
     margin-bottom: 200px;
+}
+
+//////////////////////////////
+/// section setting
+//////////////////////////////
+.section{
+    padding: 0 8%;
+    @extend .mb-xl;
 }

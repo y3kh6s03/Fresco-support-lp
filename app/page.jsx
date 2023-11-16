@@ -1,6 +1,7 @@
 "use client"
 
 import { Hero } from '@/app/components/hero/Hero'
+import { Message } from '@/app/components/message/Message';
 import { Noto_Nastaliq_Urdu, Noto_Sans } from 'next/font/google';
 import { createContext } from 'react';
 
@@ -23,6 +24,7 @@ export default function Home() {
   return (
     <FontsContext.Provider value={Fonts}>
       <Hero />
+      <Message />
     </FontsContext.Provider>
   )
 }

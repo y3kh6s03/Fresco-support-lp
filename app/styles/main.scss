@@ -1,13 +1,19 @@
-*{
+@use "app/styles/common.scss" as *;
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.wrapper{
+.wrapper {
     width: 100vw;
     max-width: 1920px;
     height: 100%;
     overflow: hidden;
     margin: 0 auto;
+    background: rgb(242, 239, 217);
+    background: linear-gradient(221deg, rgba(242, 239, 217, 1) 20%, rgba(255, 255, 255, 1) 100%);
+    line-height: 1.7;
+    @extend .font-md;
 }

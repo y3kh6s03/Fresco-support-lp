@@ -5,13 +5,14 @@
     position: relative;
     width: 100vw;
     height: 100vh;
+    @extend .mb-lg;
 
     &__logo {
         width: 200px;
         aspect-ratio: 5.5 / 1;
         position: fixed;
         top: 3%;
-        left: 5%;
+        left: 7%;
         z-index: 999;
 
         &__img {}
@@ -33,17 +34,17 @@
         mix-blend-mode: exclusion;
         position: absolute;
         top: 50%;
-        left: 5%;
+        left: 7%;
         z-index: 100;
         transform: translateY(-50%);
 
         &__h1 {
-            @extend .font-xl;
+            @extend .font-xxl;
             @extend .mb-md;
 
             &__span {
                 display: block;
-                @extend .font-lg;
+                @extend .font-xl;
                 font-weight: bold;
             }
 
