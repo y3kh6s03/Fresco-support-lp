@@ -6,15 +6,15 @@ export const Merit = () => {
         <section className={styles.merit}>
             {items.map((item, index) => {
                 return (
-                    <article key={index} className={styles.merit__inner}>
+                    <article key={index} className={styles.inner}>
 
-                        <div className={styles.merit__inner__headline}>
-                            <h3 className={styles.merit__inner__headline__h3}>
+                        <div className={styles.inner__headline}>
+                            <h3 className={styles.inner__headline__h3}>
                                 {item.headline}
                             </h3>
                         </div>
-                        <div className={styles.merit__inner__description}>
-                            <p className={styles.merit__inner__description__p}>
+                        <div className={styles.inner__description}>
+                            <p className={styles.inner__description__p}>
                                 {item.description}
                             </p>
                         </div>

@@ -13,29 +13,30 @@
         justify-content: space-around;
         gap: 50px;
     }
-
-    &__inner {
-        padding: 30px 15px;
-        background-color: $cOrange;
-        @extend .mb-sm;
-
-        @include mq(md) {
-            flex: 1;
-
-        }
-
-        &__headline {
-            &__h3 {
-                @extend .mb-sm;
-            }
-
-        }
+}
 
 
-        &__description {
-            &__p {}
+.inner {
+    padding: 30px 15px;
+    background-color: $cOrange;
+    @extend .mb-sm;
 
+    @include mq(md) {
+        flex: 1;
+
+    }
+
+    &__headline {
+        &__h3 {
+            @extend .mb-sm;
         }
 
     }
+
+
+    &__description {
+        &__p {}
+
+    }
+
 }

@@ -5,29 +5,29 @@ import items from "app/components/service/Service.json"
 
 export const Service = () => {
     return (
-        <section className={styles.service__container}>
+        <section className={styles.container}>
             {items.map((item, index) => {
                 return (
                     <article key={index} className={styles.service}>
-                        <div className={styles.service__inner}>
-                            <span className={styles.service__inner__span}>
+                        <div className={styles.inner}>
+                            <span className={styles.inner__span}>
                                 service {item.num}
                             </span>
-                            <h3 className={styles.service__inner__h3}>
+                            <h3 className={styles.inner__h3}>
                                 {item.headline}
                             </h3>
-                            <p className={styles.service__inner__p}>
+                            <p className={styles.inner__p}>
                                 {item.description}
                             </p>
                         </div>
 
-                        <div className={styles.service__image}>
-                            <Image className={styles.service__image__img} src={item.image} fill sizes="100%" alt="service-image" />
+                        <div className={styles.image}>
+                            <Image className={styles.image__img} src={item.image} fill sizes="100%" alt="service-image" />
                         </div>
                     </article>
                 )
             })}
-            <div className={styles.service__svg}>
+            <div className={styles.svg}>
                 <Image src={"/svgs/arrow.svg"} fill sizes="100%" alt="bottom-arrow"/>
             </div>
         </section>

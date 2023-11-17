@@ -3,7 +3,7 @@
 .message {
     @extend .section;
 
-    &__main {
+    .main {
         @extend .mb-md;
 
         &__h2 {
@@ -21,7 +21,7 @@
         }
     }
 
-    &__container {
+    .container {
         @include mq(lg) {
             display: flex;
             justify-content: space-between;
@@ -45,9 +45,5 @@
                 max-width: 500px;
             }
         }
-
-
     }
-
-
 }

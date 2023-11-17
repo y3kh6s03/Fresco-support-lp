@@ -1,6 +1,6 @@
 @use "app/styles/common.scss" as *;
 
-.service__container {
+.container {
     padding: 0 8%;
     position: relative;
     background-color: $cBlue;
@@ -29,67 +29,6 @@
         width: 90%;
     }
 
-    &__inner {
-        @extend .mb-sm;
-
-        @include mq(md) {
-            flex: 1;
-            max-width: 400px;
-        }
-
-        &__span {
-            display: block;
-        }
-
-        &__h3 {
-            @extend .font-lg;
-            @extend .mb-sm;
-        }
-
-        &__p {
-            max-width: 500px;
-        }
-    }
-
-    &__image {
-        position: relative;
-        width: 70vw;
-        aspect-ratio: 3 / 2;
-        margin-left: calc(50% - 20vw);
-
-        @include mq(sm) {
-            width: 50vw;
-            margin-left: calc(50% - 0vw);
-
-        }
-
-        @include mq(md) {
-            flex: 1;
-            margin-left: auto;
-        }
-
-        @include mq(lg) {
-            max-width: 450px;
-        }
-
-        & img {
-            object-fit: cover;
-        }
-    }
-
-    &__svg {
-        width: 100vw;
-        max-width: 1920px;
-        aspect-ratio: 9.6 / 1;
-        position: absolute;
-        left: 0;
-        bottom: calc(-100vw / 9.6 + 1px);
-
-        @include mq(max) {
-            bottom: -199px;
-        }
-    }
-
     &:nth-child(odd) {
         &.service {
 
@@ -106,5 +45,67 @@
                 margin-left: calc(50% - 33vw);
             }
         }
+    }
+}
+
+
+.inner {
+    @extend .mb-sm;
+
+    @include mq(md) {
+        flex: 1;
+        max-width: 400px;
+    }
+
+    &__span {
+        display: block;
+    }
+
+    &__h3 {
+        @extend .font-lg;
+        @extend .mb-sm;
+    }
+
+    &__p {
+        max-width: 500px;
+    }
+}
+
+.image {
+    position: relative;
+    width: 70vw;
+    aspect-ratio: 3 / 2;
+    margin-left: calc(50% - 20vw);
+
+    @include mq(sm) {
+        width: 50vw;
+        margin-left: calc(50% - 0vw);
+
+    }
+
+    @include mq(md) {
+        flex: 1;
+        margin-left: auto;
+    }
+
+    @include mq(lg) {
+        max-width: 450px;
+    }
+
+    & img {
+        object-fit: cover;
+    }
+}
+
+.svg {
+    width: 100vw;
+    max-width: 1920px;
+    aspect-ratio: 9.6 / 1;
+    position: absolute;
+    left: 0;
+    bottom: calc(-100vw / 9.6 + 1px);
+
+    @include mq(max) {
+        bottom: -199px;
     }
 }
