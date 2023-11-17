@@ -4,14 +4,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-a{
-    color: $cBlack;
+    list-style: none;
     text-decoration: none;
 }
 
+a {
+    color: $cBlack;
+}
+
 .wrapper {
+    position: relative;
     width: 100vw;
     max-width: 1920px;
     height: 100%;
@@ -22,5 +24,5 @@ a{
     line-height: 1.7;
     @extend .font-md;
     color: $cBlack;
-
+    z-index: -9999;
 }

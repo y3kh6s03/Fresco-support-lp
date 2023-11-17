@@ -1,0 +1,105 @@
+@use "app/styles/common.scss" as *;
+
+.flow {
+    @extend .section;
+    position: relative;
+}
+
+.title__h3 {
+    @extend .mb-md;
+    @extend .font-xl;
+    line-height: 1.3;
+
+    &__span {
+        display: block;
+    }
+}
+
+
+.flow__inner {
+    display: flex;
+    padding-top: 50px;
+    position: relative;
+    justify-content: space-between;
+
+    @include mq(xxl){
+        justify-content: space-around;
+    }
+    &:before {
+        content: "";
+        width: 95vw;
+        height: 100%;
+        background-color: $cOrange;
+        position: absolute;
+        top: 0;
+        z-index: -99;
+
+        @include mq(md){
+            width: 100%;
+        }
+    }
+}
+
+.sign {
+    &__image {
+        position: relative;
+        width: 25vw;
+        aspect-ratio: 3 / 10;
+        max-width: 350px;
+        transform: rotate(-1deg);
+
+
+        &__img {}
+    }
+}
+
+.container {
+    color: white;
+
+    @include mq(lg){
+        padding: 50px 5%;
+    }
+
+    &__inner {
+        @extend .mb-md;
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+
+        &__num {
+            flex: 1;
+            @extend .font-num;
+            line-height: 1;
+        }
+
+        &__text {
+            flex: 5;
+            color: $cBlack;
+
+            @include mq(md){
+                max-width: 300px;
+            }
+            @include mq(lg){
+                max-width: 450px;
+            }
+            @include mq(lg){
+                max-width: 550px;
+            }
+
+            &__headline {
+                margin-bottom: 5px;
+
+                &__h3 {
+                    @extend .font-xl;
+
+                }
+
+            }
+
+            &__description {
+                @extend .font-md;
+            }
+        }
+    }
+
+}

@@ -5,7 +5,8 @@
     width: 80%;
     aspect-ratio: 7 / 2;
     padding: 20px 30px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     color: white;
     background-color: $cGreen;
     border-radius: 10px;
@@ -13,85 +14,75 @@
     position: relative;
     @extend .mb-md;
 
-    @include mq(md){
+    @include mq(md) {
         max-width: 500px;
     }
-    @include mq(md){
+
+    @include mq(md) {
         max-width: 700px;
     }
 
-    &__span:nth-of-type(1) {
-        @extend .font-md;
-        position: absolute;
-        top: 10px;
+    &:hover {
+
+        .name {
+            &__p {
+                transform: translateY(-100%);
+            }
+
+            &__span {
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .span:nth-of-type(2) {
+            width: 60%;
+        }
+    }
+}
+
+.span:nth-of-type(1) {
+    @extend .font-md;
+    position: absolute;
+    top: 10px;
+}
+
+.name {
+    width: 100%;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &__p {
+        @extend .font-xl;
+        line-height: 1;
+        font-weight: bold;
+        transition: all .3s $ease;
     }
 
-    &__name {
-        width: 100%;
-        text-align: center;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    &__span {
+        @extend .font-xl;
+        font-weight: bold;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
-
-        &__p {
-            @extend .font-xl;
-            line-height: 1;
-            font-weight: bold;
-            transition: all .3s $ease;
-        }
-
-        &__span {
-            @extend .font-xl;
-            font-weight: bold;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, 100%);
-            transition: all .3s $ease;
-
-        }
-    }
-
-    &__span:nth-of-type(2) {
-        display: block;
-        width: 80%;
-        height: 1px;
-        background-color: white;
-        margin: 0 auto;
-        position: absolute;
-        bottom: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        transition: all .2s $ease;
-    }
-
-    &:hover {
-        & .contact {
-
-
-            &__span:nth-of-type(1) {}
-
-
-            &__name {
-                &__p {
-                    transform: translateY(-100%);
-                }
-
-                &__span {
-                    transform: translate(-50%, -50%);
-                }
-            }
-
-            &__span:nth-of-type(2) {
-                width: 60%;
-            }
-
-
-        }
-
+        transform: translate(-50%, 100%);
+        transition: all .3s $ease;
 
     }
+}
 
+.span:nth-of-type(2) {
+    display: block;
+    width: 80%;
+    height: 1px;
+    background-color: white;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .2s $ease;
 }
