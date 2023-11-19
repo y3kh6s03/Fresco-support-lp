@@ -16,9 +16,9 @@ export const Option = () => {
                 </div>
                 <div className={styles.card__wrapper}>
                     {
-                        items.map((item) => {
+                        items.map((item, index) => {
                             return (
-                                <article className={styles.card}>
+                                <article key={index}className={styles.card}>
                                     <div className={styles.card__image}>
                                         <Image className={styles.card__image__img} src={item.image} fill sizes="100%" alt="option image" />
                                     </div>

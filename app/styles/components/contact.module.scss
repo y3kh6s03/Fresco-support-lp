@@ -12,7 +12,7 @@
     border-radius: 10px;
     cursor: pointer;
     position: relative;
-    @extend .mb-md;
+    @extend .mb-lg;
 
     @include mq(md) {
         max-width: 500px;
