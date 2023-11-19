@@ -4,7 +4,13 @@
     @extend .section;
 
     .main {
-        @extend .mb-md;
+        @extend .mb-lg;
+
+        @include mq(xl){
+            margin-bottom: 200px
+        }
+
+
 
         &__h2 {
             @extend .font-xl;
@@ -15,26 +21,100 @@
         &__p {
             max-width: 500px;
 
-            @include mq(lg){
+            @include mq(lg) {
                 max-width: 850px;
             }
         }
     }
 
     .container {
-        @include mq(lg) {
+        @include mq(md) {
             display: flex;
             justify-content: space-between;
             align-items: top;
             gap: 20px
         }
-        @include mq(xl){
+
+        @include mq(xl) {
             gap: 50px
         }
 
         &__inner {
-            @extend .mb-md;
-            max-width: 320px;
+            width: 60%;
+            max-width: 200px;
+            margin: 0 auto 130px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+
+            &:nth-child(1){
+                z-index: 1;
+            }
+            &:nth-child(2){
+                z-index: -1;
+            }
+            &:nth-child(3){
+                z-index: -2;
+            }
+
+            @include mq(md){
+                max-width: 150px;
+            }
+
+            @include mq(lg){
+                max-width: 200px;
+            }
+            @include mq(xl){
+                max-width: 330px;
+            }
+
+            &::before {
+                content: "";
+                width: 80vw;
+                max-width: 320px;
+                aspect-ratio: 1 / 1;
+                background-color: white;
+                border-radius: 50% 50% 0 50%;
+                z-index: -1;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+
+                @include mq(md){
+                    max-width: 280px;
+                }
+                @include mq(lg){
+                    max-width: 340px;
+                }
+                @include mq(xl){
+                    max-width: 380px;
+                }
+            }
+            &::after {
+                content: "";
+                width: 76vw;
+                max-width: 300px;
+                aspect-ratio: 1 / 1;
+                border-right: .5px solid black;
+                border-radius: 50% 50% 0 50%;
+                z-index: -1;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+
+                @include mq(md){
+                    max-width: 260px;
+                }
+                @include mq(lg){
+                    max-width: 310px;
+                }
+                @include mq(xl){
+                    max-width: 350px;
+                }
+            }
+
 
             &__h3 {
                 @extend .font-lg;

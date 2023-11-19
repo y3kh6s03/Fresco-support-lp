@@ -7,7 +7,7 @@
     color: white;
     padding-top: 50px;
     padding-bottom: 10px;
-    @extend .mb-lg;
+    @extend .mb-xl;
 
     @include mq(sm) {
         padding-top: 70px;
@@ -50,6 +50,7 @@
 
 
 .inner {
+    position: relative;
     @extend .mb-sm;
 
     @include mq(md) {
@@ -57,13 +58,34 @@
         max-width: 400px;
     }
 
-    &__span {
-        display: block;
+    &:before {
+        content: "";
+        width: 200px;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        top: 80px;
+        left: 30px;
+        transform: rotate(-45deg);
     }
+
+    &__num {
+        height: 100px;
+        &__span:nth-of-type(1) {
+            display: block;
+        }
+
+        &__span:nth-of-type(2) {
+            display: block;
+            @extend .font-num;
+        }
+    }
+
 
     &__h3 {
         @extend .font-lg;
-        @extend .mb-sm;
+        @extend .mb-md;
+        margin-left: 120px;
     }
 
     &__p {
