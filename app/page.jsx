@@ -5,6 +5,7 @@ import { Flow } from '@/app/components/frow/Flow';
 import { Hero } from '@/app/components/hero/Hero'
 import { Merit } from '@/app/components/merit/Merit';
 import { Message } from '@/app/components/message/Message';
+import { Option } from '@/app/components/option/Option';
 import { Service } from '@/app/components/service/Service';
 import { Noto_Nastaliq_Urdu, Noto_Sans } from 'next/font/google';
 import { createContext } from 'react';
@@ -33,6 +34,8 @@ export default function Home() {
       <Merit />
       <Contact />
       <Flow />
+      <Option />
+      <Contact />
     </FontsContext.Provider>
   )
 }

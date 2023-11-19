@@ -1,0 +1,32 @@
+[
+    {
+        "num": "01",
+        "merit": "時間を味方につけて、毎日を軽やかに",
+        "title": "時短食材ご提供",
+        "image": "/images/meal-kit.jpg"
+    },
+    {
+        "num": "02",
+        "merit": "特別な瞬間に特別な味わいを",
+        "title": "イベント食ご提案",
+        "image": "/images/event-meal.jpg"
+    },
+    {
+        "num": "03",
+        "merit": "お弁当で、一食一会。日々の食卓に特別な感動を",
+        "title": "お弁当サービス",
+        "image": "/images/lunch-box.jpg"
+    },
+    {
+        "num": "04",
+        "merit": "シェフの技術で彩る、贅沢なひととき",
+        "title": "出張シェフサービス",
+        "image": "/images/chef.jpg"
+    },
+    {
+        "num": "05",
+        "merit": "一人ひとりに合わせた美味しさと健康を",
+        "title": "職員様向け栄養指導",
+        "image": "/images/dietician.jpg"
+    }
+]
