@@ -1,5 +1,13 @@
 @use "app/styles/mq.scss" as *;
 
+.font-sm {
+    font-size: 10px;
+    line-height: 1.6;
+
+    @include mq(lg) {
+        font-size: 12px;
+    }
+}
 .font-md {
     font-size: 14px;
     line-height: 1.6;

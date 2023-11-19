@@ -1,6 +1,7 @@
 "use client"
 
 import { Contact } from '@/app/components/contact/Contact';
+import { Footer } from '@/app/components/footer/Footer';
 import { Flow } from '@/app/components/frow/Flow';
 import { Hero } from '@/app/components/hero/Hero'
 import { Merit } from '@/app/components/merit/Merit';
@@ -36,6 +37,7 @@ export default function Home() {
       <Flow />
       <Option />
       <Contact />
+      <Footer />
     </FontsContext.Provider>
   )
 }

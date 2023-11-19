@@ -8,6 +8,11 @@
     text-decoration: none;
 }
 
+body{
+    position: relative;
+    z-index: -999;
+}
+
 a {
     color: $cBlack;
 }
