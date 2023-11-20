@@ -1,5 +1,5 @@
 import styles from "app/styles/components/flow.module.scss";
-import items from "app/components/frow/flow.json";
+import items from "app/components/frow/Flow.json";
 import Image from "next/image";
 import { useContext } from "react";
 import { FontsContext } from "@/app/page";
